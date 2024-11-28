@@ -1,0 +1,125 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin: 0;
+}
+
+/* Estilos del contenedor de los productos */
+.productos-destacados {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Espacio entre tarjetas */
+    padding: 20px;
+}
+.slider-slides {
+    display: flex;
+    transition: transform 1s ease;
+}
+/* Estilo de la tarjeta de producto */
+.producto {
+    background: #f9f9f9;
+    /* Fondo de la tarjeta */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    /* Efecto al pasar el cursor */
+}
+
+/* Estilo de la imagen del producto */
+.producto-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilo de la información del producto */
+.producto-info {
+    margin-top: 10px;
+}
+
+/* Estilo del botón de "Comprar ahora" */
+.btn-comprar {
+    background: #00334e;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-comprar:hover {
+    background: #004a6e;
+}
+
+/* Estilo de la categoría del producto */
+.categoria {
+    font-size: 12px;
+    color: #555;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+/* Estilo del nombre del producto */
+.nombre {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Estilo del precio del producto */
+.precio {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilo del botón de "Añadir al carrito" */
+.btn-carrito {
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-carrito:hover {
+    background: #ddd;
+}
+#slider-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.slide.active {
+    display: block;
+}
